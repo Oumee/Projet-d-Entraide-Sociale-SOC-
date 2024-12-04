@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="MSSnaps" />
+        <module name="MSClientAPI" />
+        <module name="eureka" />
+        <module name="Seeders" />
+        <module name="MSAdmin" />
+        <module name="SOCAuth" />
+        <module name="MSUser" />
+        <module name="MSEvent" />
+        <module name="MSDataPostGis" />
+        <module name="SOCEureka" />
+        <module name="MSFilter" />
+        <module name="MSDataMongoDB" />
+        <module name="MSCommunity" />
+        <module name="MSDonation" />
+        <module name="MSSecurity" />
+        <module name="MSGateway" />
+        <module name="MSSocialMedia" />
+        <module name="MSAuth" />
+        <module name="MSMessenger" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="MSDataFirebase" target="21" />
+      <module name="MSDataRedis" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="MSAdmin" options="-parameters" />
+      <module name="MSAuth" options="-parameters" />
+      <module name="MSClientAPI" options="-parameters" />
+      <module name="MSCommunity" options="-parameters" />
+      <module name="MSDataFirebase" options="-parameters" />
+      <module name="MSDataMongoDB" options="-parameters" />
+      <module name="MSDataPostGis" options="-parameters" />
+      <module name="MSDataRedis" options="-parameters" />
+      <module name="MSDonation" options="-parameters" />
+      <module name="MSEvent" options="-parameters" />
+      <module name="MSFilter" options="-parameters" />
+      <module name="MSGateway" options="-parameters" />
+      <module name="MSMessenger" options="-parameters" />
+      <module name="MSSecurity" options="-parameters" />
+      <module name="MSSnaps" options="-parameters" />
+      <module name="MSSocialMedia" options="-parameters" />
+      <module name="MSUser" options="-parameters" />
+      <module name="SOCAuth" options="-parameters" />
+      <module name="SOCEureka" options="-parameters" />
+      <module name="Seeders" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+    </option>
+  </component>
+</project>

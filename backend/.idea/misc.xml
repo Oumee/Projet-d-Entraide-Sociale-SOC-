@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/SOC.Auth/pom.xml" />
+        <option value="$PROJECT_DIR$/SOC.Donation/pom.xml" />
+        <option value="$PROJECT_DIR$/SOC.Filter/pom.xml" />
+        <option value="$PROJECT_DIR$/SOC.Admin/pom.xml" />
+        <option value="$PROJECT_DIR$/SOC.Gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/SOC.Security/pom.xml" />
+        <option value="$PROJECT_DIR$/SOC.User/pom.xml" />
+        <option value="$PROJECT_DIR$/SOC.Messenger/pom.xml" />
+        <option value="$PROJECT_DIR$/SOC.Snaps/pom.xml" />
+        <option value="$PROJECT_DIR$/SOC.SocialMedia/pom.xml" />
+        <option value="$PROJECT_DIR$/MSData.MongoDB/pom.xml" />
+        <option value="$PROJECT_DIR$/SOC.Event/pom.xml" />
+        <option value="$PROJECT_DIR$/MSData.PostGis/pom.xml" />
+        <option value="$PROJECT_DIR$/Seeders/pom.xml" />
+        <option value="$PROJECT_DIR$/SOC.Community/pom.xml" />
+        <option value="$PROJECT_DIR$/MSData.Redis/pom.xml" />
+        <option value="$PROJECT_DIR$/MSData.Firebase/pom.xml" />
+        <option value="$PROJECT_DIR$/SOC.Eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/SOC.ClientAPI/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/MSData.Firebase/pom.xml" />
+        <option value="$PROJECT_DIR$/MSData.Redis/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

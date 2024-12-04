@@ -1,0 +1,63 @@
+services:
+  # MongoDB service
+  mongodb:
+    container_name: mongodb
+    image: mongo:latest
+    ports:
+      - "27018:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - soc-ms-network
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: 55
+      MONGO_INITDB_DATABASE: soc_ms
+
+  # PostGis service
+  postgis:
+    container_name: postgis
+    image: kartoza/postgis:latest
+    ports:
+      - "5433:5432"
+    networks:
+      - soc-ms-network
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASS: 55
+      POSTGRES_DB: soc_ms
+
+  # Add mongodb service for testing with same network and username and password
+  mongodb-test:
+    container_name: mongodb-test
+    image: mongo:latest
+    ports:
+      - "27019:27017"
+    networks:
+      - soc-ms-network
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: 55
+      MONGO_INITDB_DATABASE: soc_ms_test
+
+  # Add postgis service for testing with same network and username and password
+  postgis-test:
+    container_name: postgis-test
+    image: kartoza/postgis:latest
+    ports:
+      - "5434:5432"
+    networks:
+      - soc-ms-network
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASS: 55
+      POSTGRES_DB: soc_ms_test
+
+
+volumes:
+  mongodb_data:
+    driver: local
+
+networks:
+  soc-ms-network:
+    driver: bridge
